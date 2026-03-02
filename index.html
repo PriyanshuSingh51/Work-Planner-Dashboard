@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LifeOS Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <h2 id="greeting">Hello</h2>
+    <div id="clock"></div>
+    <button onclick="toggleTheme()">Theme</button>
+</div>
+
+<div class="container">
+
+    <div class="section">
+        <h3>Task Board</h3>
+        <input type="text" id="taskInput" placeholder="Add task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="section">
+        <h3>Quick Notes</h3>
+        <textarea id="noteInput" placeholder="Write note..."></textarea>
+        <button onclick="saveNote()">Save</button>
+        <div id="notes"></div>
+    </div>
+
+    <div class="section">
+        <h3>Daily Goal</h3>
+        <input type="number" id="goalInput" placeholder="Target (e.g. 5 tasks)">
+        <button onclick="setGoal()">Set</button>
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Motivation</h3>
+        <p id="quote">Click below</p>
+        <button onclick="newQuote()">New Quote</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
